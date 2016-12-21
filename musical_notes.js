@@ -1,14 +1,4 @@
 // musical notes
-var USAGE = [ "German style musical notes counter.",
-              "Works with classic major/minor scalas, up to 6 sharps or flats as key signature", 
-              "--------",
-              "Usage examples:", "", 
-              "    s = new Scala();", 
-              "    console.log(s.do, s.re, s.mi, s.fa, s.so, s.la, s.ti, s.do);",
-              "    s.do = 'Eb'; // setting Eb major",
-              "    console.log(s.Notes);",
-              "    console.log(s.keySignature);" ].join("\n");
-
 var bigSecond = { 'A':'H', 'B':'C', 'H':'C#', 'Cb':'Db', 'C':'D', 
                   'C#':'D#', 'Db':'Eb', 'D':'E', 'D#':'E#',
                   'Eb':'F', 'E':'F#', 'F':'G', 'F#':'G#',
@@ -56,5 +46,3 @@ SCALA.forEach( function(relative) {
         return this.Mapping[relative];
     });
 });
-
-console.log( USAGE );
